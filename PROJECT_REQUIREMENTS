@@ -1,0 +1,51 @@
+# FastAPI Todo App Project Requirements
+
+## Overview
+Create a simple Todo application using FastAPI that allows users to create, read, update, and delete todo items.
+
+## Core Requirements
+
+1. **API Endpoints**:
+   - GET `/todos`: List all todo items
+   - GET `/todos/{todo_id}`: Get a specific todo item
+   - POST `/todos`: Create a new todo item
+   - PUT `/todos/{todo_id}`: Update a todo item
+   - DELETE `/todos/{todo_id}`: Delete a todo item
+
+2. **Todo Item Structure**:
+   - id: Unique identifier (integer)
+   - title: String (required)
+   - description: String (optional)
+   - completed: Boolean (default: false)
+
+3. **Data Storage**:
+   - Use in-memory storage (a simple Python list)
+   - No database required for this simple version
+
+4. **Basic Validation**:
+   - Ensure required fields are provided
+   - Return appropriate status codes and error messages
+
+## Technical Specifications
+
+- Use FastAPI framework
+- Use Pydantic for data models
+- Include basic error handling
+- Provide API documentation using FastAPI's built-in Swagger UI
+
+## Optional Features (if time permits)
+- Add basic filtering (completed/incomplete todos)
+- Add basic pagination
+- Add timestamp fields (created_at, updated_at)
+
+## Deliverables
+1. Working FastAPI application with the required endpoints
+2. README.md with instructions on how to run the application
+3. Simple examples of how to use the API
+
+## Non-requirements (will be added in next iterations)
+- Authentication/Authorization
+- Database integration
+- Frontend UI
+- Logging
+- Testing

@@ -1,0 +1,4 @@
+- always use modern python 3.11+ type hints
+- add docs string only if necessary
+- always verify the quality of the code
+- add meaningful tests to verify features using pytest
